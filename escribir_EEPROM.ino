@@ -66,7 +66,7 @@ void setup() {
   Serial.begin(115200);
   Serial.println();
 
-  EEPROM.begin(256);
+  EEPROM.begin(512);
   delay(10);
   WriteDataEprom();
   
@@ -113,7 +113,7 @@ void WriteDataEprom(){
   graba(dir_conf,"configurado");
   graba(dir_topic1,"prueba/light1");
   graba(dir_topic2,"prueba/light2");
-  graba(dir_serverwan,"giovanazzi.ddns.net");
+  graba(dir_serverwan,"idirect.dlinkddns.com");
   graba(dir_serverlan,"192.168.1.106");
   graba(dir_puerto,"1883");
 /*
